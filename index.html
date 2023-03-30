@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="to-do">
+        <div class="container">
+          <div class="header">
+            <div class="heading">
+              <h1 class="heading-primary">todo</h1>
+            </div>
+            <div class="themes">
+              <img class="themes-img" src="img/icon-moon.svg" alt="" />
+            </div>
+          </div>
+          <form class="todo-form">
+            <span class="circle"></span>
+            <input
+              type="text"
+              id="todo"
+              class="todo-input"
+              placeholder="Create a new todo..."
+            />
+          </form>
+          <div class="todo-box">
+            <!-- start items -->
+            <div class="todo-list container"></div>
+            <!-- start items -->
+            <div class="todo-footer">
+              <div class="items-left-box">
+                <p class="items-left-text">
+                  <span class="counter">0</span> items left
+                </p>
+              </div>
+              <ul class="todo-category-list">
+                <li class="todo-category all-category">All</li>
+                <li class="todo-category active-category">Active</li>
+                <li class="todo-category completed-category">Completed</li>
+              </ul>
+              <div class="btn-clear-box">
+                <button class="btn-clear">Clear Completed</button>
+              </div>
+            </div>
+          </div>
+          <div class="drag-drop-box">
+            <p class="drag-drop-text">Drag and drop to reorder list</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

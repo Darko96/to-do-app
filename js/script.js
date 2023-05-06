@@ -73,8 +73,11 @@ function deleteItem(event) {
   const element = event.currentTarget.parentElement.parentElement;
   const id = element.dataset.id;
   removeFromLocalStorage(id);
-  counter--;
-  counterText.textContent = counter;
+  if (!element.classList.contains("completed")) {
+    counter--;
+    counterText.textContent = counter;
+  }
+
   todoList.removeChild(element);
 }
 
